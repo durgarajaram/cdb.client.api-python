@@ -1,0 +1,13 @@
+doc
+src/.coverage
+src/dist
+src/test/.coverage
+.settings
+src/MANIFEST
+.project
+.pydevproject
+src/test/htmlcov
+.idea
+src/cc.sql
+src/cc_1.sql
+src/cc_2.sql

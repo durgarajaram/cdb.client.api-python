@@ -1,0 +1,89 @@
+27/02/2017
+~~~~~~~~~~
+
+Modify the clinet to handle a coolingchannel tag field as a part of the cc dict (the cc dictionary now contains the tag name
+it was set with). 
+version 1.1.8
+
+16/06/2016
+~~~~~~~~~~
+
+Batch Iterarion and MC Serial number updated to reflect a change in the server (autoincrementing the b.i.n and mc s.no.)
+version 1.1.6
+
+
+09/05/2016
+~~~~~~~~~~~~~~
+
+Coolingchannel - new run based server implemented, for_date funcs need server-side update !
+Add Coolingchannel Absorber as part of the Cooling Channel API
+
+Add Reconstruction flags
+
+Add geometry corrections - work in progress
+
+Many bug fixes.
+
+
+24/07/13 1.1.1
+~~~~~~~~~~~~~~
+Update doc
+
+22/07/13 1.1.0
+~~~~~~~~~~~~~~
+CoolingChannel Class - new class
+CoolingChannelSuperMouse Class - new class
+
+12/02/13 1.0.0.0
+~~~~~~~~~~~~~~~~
+StateMachine Class - added PV methods
+StateMachineSuperMouse Class - added PV methods
+Control class removed
+PIDCtrl Class - new class
+PIDCtrlSuperMouse Class - new class
+Target Class - new class
+TargetSuperMouse Class Class - new class
+Geometry Class - get_iIds now additionally returns technical_drawing_name
+GeometrySuperMouse Class - set_gdml now takes an extra parameter technical_drawing_name
+BeamlineSuperMouse Class - the value for beam_stop in set_beamline_tag is now 'Open' or 'Closed'
+Beamline Class - the value for beam_stop is now 'Open' or 'Closed'
+BeamlineSuperMouse Class - in set_end_run isis_beam data is now a list of dictionaries
+
+20/07/12 0.0.4.0
+~~~~~~~~~~~~~~~~
+Cabling Class - Added support for the detectors
+CablingSuperMouse Class - Added support for the detectors
+Calibration Class - Added support for the detectors
+CalibrationSuperMouse Class - Added support for the detectors
+
+07/06/2012 0.0.3.0
+~~~~~~~~~~~~~~~~~~
+Beamline Class - includes isis_beam in run data
+BeamlineSuperMouse Class - set_end_run now takes three dicts as the arguments
+Beamline Class - includes ldc_host_names in run data
+BeamlineSuperMouse Class - set_start_run now takes an additional field ldc_host_names, a list of strings
+Target/ TargetSuperMouse Classes - removed, fields moved into Beamline classes
+Beamline Class - includes scalars in run data
+Exception class - now python 2.4 backwards compatible
+Beamline Class - changed notes to start_notes
+Beamline Class - added listTags
+
+
+06/01/2012 0.0.2.0
+~~~~~~~~~~~~~~~~~~
+Removed dependence on bitarray
+Added set_tracker to _cabling_supermouse.py
+Added set_tracker to _calibration_supermouse.py
+Removed methods add_tracker and update_tracker from _cabling_supermouse.py
+Removed methods add_tracker and update_tracker from  _calibration_supermouse.py
+Bug fix in calibration tdc_gain -> tcd_slope
+Beamline API split into Beamline API and Tracker API
+Added url as an optional argument in the constructors of all public classes
+Added get_version and get_name methods
+Added Target API
+Changes to _beamline_supermouse.py
+Added State Machine API
+
+07/09/2011 0.0.1.0
+~~~~~~~~~~~~~~~~~~
+First release

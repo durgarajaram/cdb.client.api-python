@@ -1,0 +1,26 @@
+TESTING
+~~~~~~~
+
+cd ~/workspace/mice.cdb.client.api-python/src/
+pylint cdb
+pylint test
+cd test
+export PYTHONPATH=.
+/usr/bin/nosetests -i=*test* --with-coverage  --cover-package cdb --cover-erase
+
+
+BUILDING
+~~~~~~~~
+
+update the version number, __version__, in __init__.py
+
+cd ~/workspace/mice.cdb.client.api-python/src/
+./setup.py sdist
+
+
+DEPLOYING
+~~~~~~~~~
+
+tar -zxf cdb-0.0.n.n.tar.gz
+cd cdb-0.0.n.n/
+./setup.py install
